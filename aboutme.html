@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUTME</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+    body{background:url(colours.jpg);
+    background-size: cover;}
+    .nav li {display:inline-block}
+    .nav li a{
+       padding: 15px;
+       box-shadow:-3px 3px #424240;
+       text-decoration: none;
+       border-radius: 21px;
+}
+
+.nav li a:hover,.nav li a.active{
+    background-color: #c9c9c1;
+    text-decoration: underline ;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.mydetails h1,h3{
+    text-align:left;
+    position:relative;
+    top:115px;
+    font-family: "Dancing Script", cursive;
+}
+
+h1{
+    font-size: 70px;
+}
+.skill h1{
+        text-align: center;}
+    .skill h3{
+        margin:5px;
+    } 
+    .skill{
+        border: 2px solid white;
+        display: flexbox;
+        position: absolute;
+        top: 154px;
+        left: 30px;
+        height: 414px;
+        width: 477px;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(95, 85, 85, 0.25), 0 10px 10px rgba(15, 14, 14, 0.22);
+}
+    .skill li{
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+     .bar{
+        background: #353b48;
+        display: block;
+        height: 20px;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius:10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0,0, 0, 0.12), 0 1px 2px rgba(0, 0,0, 0.24);
+        transition:all 0.3s cubic-bezier(0.25,.8,.25,1);
+     }
+     .bar:hover{
+        box-shadow: 0 14px 28px rgba(0,0, 0, 0.25), 0 10px 10px rgba(0, 0,0, 0.22);
+     }
+     .bar span{
+        height: 20px;
+        float:left;
+        background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(253,103,103,1)100%);
+     }
+     .html{
+        width: 90%;
+        animation: html 3s;
+     }
+     .CSS{
+        width: 75%;
+        animation: CSS 3s;
+     }
+     .CPP {
+        width: 60%;
+        animation: CPP 3s;
+     }
+     .Java{ 
+        width: 35%;
+        animation: Java 3s;
+     }
+     @keyframes html {
+        0%{
+            width:0%;
+        }
+        100%{
+            width:90%;
+        }
+        
+     }
+     @keyframes CSS {
+        0%{
+            width:0%;
+        }
+        100%{
+            width:75%;
+        }
+        
+     }
+     @keyframes CPP {
+        0%{
+            width:0%;
+        }
+        100%{
+            width:60%;
+        }
+        
+     }
+     @keyframes Java {
+        0%{
+            width:0%;
+        }
+        100%{
+            width:35%;
+        }
+        
+     }
+     .me{
+        display: flexbox;
+        position: absolute;
+        top: 160px;
+        right: 30px;
+        height: 414px;
+        width: 421px;
+        font-size: larger;
+     }
+</style>
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#" class="active">ABOUT ME</a></li>
+                <li><a href="./education.html">EDUCATION</a></li>
+                <li><a href="./achievements.html">ACHIEVEMENTS</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="skill">
+            <h1> My Skills</h1>
+    
+            <li><h3>html</h3>
+                <span class="bar"><span class="html"></span></span></li>
+                <li><h3>C++</h3>
+                    <span class="bar"><span class="CPP"></span></span></li>
+                    <li><h3>CSS</h3>
+                        <span class="bar"><span class="CSS"></span></span></li>
+                        <li><h3>Java</h3>
+                            <span class="bar"><span class="Java"></span></span></li>
+            
+        </div>
+        
+    </div>
+    <div class="me">
+        Hi<p>I am Esha Bidkar studying in Veermata Jijabai Technological Institute, Matunga, Mumbai. I am in first year. I am a computer engineering student.</p>
+        <p>Although I may not be the loudest in the room but I am a dedicated learner. I like to learn and get knowledge of the new things and techniques.My background may not be in technology but I have been always curious about it.</p>
+    </div>
+    
+</body>
+</html>
